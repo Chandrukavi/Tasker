@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  //Login Page Style
+
+
+.container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 250px;
+  top: 100px;
+  
+  .left-panel {
+    flex: 1;
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .right-panel {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #6a0dad;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #5b0c9a;
+      }
+    }
+
+    a {
+      color: #6a0dad;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+  //Signup page style
+  .signup-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 250px;
+    top: 100px;
+  
+    .signup-left-panel {
+      flex: 1;
+      background-color: #ededed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  
+      .signup-logo {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    .signup-right-panel {
+      flex: 1;
+      background-color: #ffffff;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      h2 {
+        margin: 0 0 10px;
+      }
+  
+      p {
+        margin: 0 0 20px;
+        color: #555;
+      }
+  
+      .signup-form-group {
+        margin-bottom: 20px;
+  
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+  
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+    }
+ 
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #5b0c9a;
+    }
+  }
+  
+  a {
+    color: #6a0dad;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+ // Sidebar styling
+.sidebar {
+  width: 250px;
+  background-color: #ededed;
+  display: flex;
+  height: 96.5vh;
+  flex-direction: column;
+  padding: 10px;
+  
+  .logo {
+    display: flex;
+    margin-top: 10%;
+   
+    img {
+      width: 50%;
+      height: 20vh;
+      margin-left: 20%;
+    }
+  }
+  
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 50vh;
+      margin-left: 10%;
+      li {
+        padding: 10px 0;
+        display: flex;
+    
+        
+        &.active {
+          background-color: #e0e0e0;
+          width: 50%;
+        }
+        
+        .icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  .custom-select {
+    margin: 10px 0;
+    padding: 5px;
+    border-style: none;
+    outline: none;
+  }
+  
+  .logout {
+
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+// Main content styling
+
+.task-list {
+  display: flex;
+  width: 100%;
+  .Tasker-flex {
+    display: flex;
+  }
+  .Side-Tasker-flex{
+    display: flex;
+  }
+  h1{
+   margin-left: 50%;
+   color: #515762;
+   font-size: 35px;
+  }
+  .Tasker-Main-flex{
+        margin-left: 10%;
+      
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 5%;
+    gap: 315px;
+   
+
+    h1 {
+      margin: 0;
+      font-size: 35px;
+    }
+
+    .filter-buttons {
+      display: flex;
+      gap: 20px;
+     
+      button {
+        margin: 0 5px;
+        padding: 5px 10px;
+        width: 60px;
+        border: none;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+
+  .Add-Btn{
+    width: 100%;
+    padding: 1%;
+    font-size: 20px;
+    background-color: white;
+   border: 1px solid black;
+   border-radius: 8px;
+
+  }
+
+
+
+
+  .Add-Task-Box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 180px;
+    padding: 5%;
+    width: 60%;
+    height: 10%;
+    left: 300px;
+    background-color: #ededed;
+
+    .Add-task-input {
+      display: flex;
+      align-items: center;
+
+      input {
+        flex: 1;
+        padding: 5px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .custom-select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+
+        .icon {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .Add-Task-Btn {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:first-of-type {
+          background-color: #28a745;
+          color: white;
+
+          &:hover {
+            background-color: #218838;
+          }
+        }
+
+        &:last-of-type {
+          background-color: #dc3545;
+          color: white;
+
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  }
+}
+}
+
+
+//Task
+
+
+/* Define variables for commonly used values */
+$border-color: #ccc;
+$background-color: #f9f9f9;
+$hover-color: #ddd;
+$padding: 10px;
+$border-radius: 4px;
+
+/* General styles */
+li {
+  list-style-type: none;
+  margin: $padding 0;
+  padding: $padding;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $background-color;
+}
+
+/* Input styles */
+.input-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input[type="checkbox"] {
+    margin-right: $padding;
+  }
+
+  /* Task title styles */
+  span {
+    flex-grow: 1;
+  }
+}
+
+/* Button styles */
+.Flex-Btn {
+  display: flex;
+  gap: 5px;
+
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+/* Edit form styles */
+.Task-Create-Input {
+  display: flex;
+  gap: $padding;
+  align-items: center;
+
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    flex-grow: 1;
+  }
+
+  select {
+    padding: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+
+
